@@ -14,6 +14,7 @@ const typeDefs = gql`
     createdAt: String!
     name: String!
     type: String!
+    img: String!
   }
 
   type Query {
