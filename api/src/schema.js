@@ -17,7 +17,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    Pets: [Pet]!
+    pets: [Pet]!
   }
 `;
 
