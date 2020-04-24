@@ -8,6 +8,9 @@ module.exports = {
     pets(_, { input }, ctx) {
       return ctx.models.Pet.findMany(input);
     },
+    pet(_, { id }, ctx) {
+      return ctx.models.Pet.findOne({ id: parseInt(id) });
+    },
   },
   // Mutation: {},
   Pet: {

@@ -23,6 +23,7 @@ const typeDefs = gql`
 
   type Query {
     pets(input: PetInput): [Pet]!
+    pet(id: ID!): Pet
   }
 `;
 
