@@ -4,7 +4,23 @@
     "username": "frontendmaster"
   },
   "pet": [
-    { "id": 1, "type": "dog", "name": "Fido" },
-    { "id": 2, "type": "cat", "name": "Cleo" }
+    {
+      "id": 1,
+      "type": "DOG",
+      "name": "Fido",
+      "createdAt": "1961496416"
+    },
+    {
+      "id": 2,
+      "type": "CAT",
+      "name": "Cleo",
+      "createdAt": "1961496416"
+    },
+    {
+      "id": "svGI518b2T0bYOrGskXiq",
+      "createdAt": 1587692062310,
+      "name": "KIWI",
+      "type": "CAT"
+    }
   ]
 }

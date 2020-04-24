@@ -12,7 +12,11 @@ module.exports = {
       return ctx.models.Pet.findOne({ id: parseInt(id) });
     },
   },
-  // Mutation: {},
+  Mutation: {
+    newPet(_, { input }, ctx) {
+      return ctx.models.Pet.create(input);
+    },
+  },
   Pet: {
     img(pet) {
       return pet.type === "DOG" ? "https://placedog.net/300/300" : "http://placekitten.com/300/300";
