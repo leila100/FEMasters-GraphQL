@@ -26,6 +26,7 @@ const typeDefs = gql`
   input NewPetInput {
     name: String!
     type: String!
+    userId: ID!
   }
 
   type Query {

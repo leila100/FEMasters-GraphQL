@@ -21,6 +21,13 @@
       "createdAt": 1587692062310,
       "name": "KIWI",
       "type": "CAT"
+    },
+    {
+      "id": "hcB4yENmHgL-i-2IhxURD",
+      "createdAt": 1588120211987,
+      "name": "DEA",
+      "type": "DOG",
+      "userId": "1"
     }
   ]
 }
