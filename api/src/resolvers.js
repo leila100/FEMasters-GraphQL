@@ -11,6 +11,9 @@ module.exports = {
     pet(_, { id }, ctx) {
       return ctx.models.Pet.findOne({ id: parseInt(id) });
     },
+    me(_, __, ctx) {
+      return ctx.user;
+    },
   },
   Mutation: {
     newPet(_, { input }, ctx) {
@@ -25,5 +28,9 @@ module.exports = {
       return ctx.user;
     },
   },
-  // User: {},
+  User: {
+    pets(_, __, ctx) {
+      return ctx.models.Pet.findMany();
+    },
+  },
 };
