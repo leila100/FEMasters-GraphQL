@@ -1,9 +1,9 @@
 {
   "user": {
     "id": "string",
-    "username": "string"
+    "userName": "string"
   },
-  "pet":{
+  "pet": {
     "id": "string",
     "createdAt": "number",
     "name": "string",

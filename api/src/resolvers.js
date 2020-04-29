@@ -21,6 +21,9 @@ module.exports = {
     img(pet) {
       return pet.type === "DOG" ? "https://placedog.net/300/300" : "http://placekitten.com/300/300";
     },
+    user(_, __, ctx) {
+      return ctx.user;
+    },
   },
   // User: {},
 };
