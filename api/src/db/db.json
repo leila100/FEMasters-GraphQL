@@ -30,37 +30,16 @@
       "userId": "1"
     },
     {
-      "id": "Bd_h3k2j4bj6o60qBXpyT",
-      "createdAt": 1588975594863,
+      "id": "vquociPhdzAUg2fHsJi6b",
+      "createdAt": 1588978214103,
       "name": "Daisy",
       "type": "DOG",
       "userId": "1"
     },
     {
-      "id": "Xy1F-K1TKm27qIpKdHv-D",
-      "createdAt": 1588975668633,
+      "id": "lQDTWxt8JNQ8yA0Z1xYsl",
+      "createdAt": 1588978243727,
       "name": "Kitty",
-      "type": "CAT",
-      "userId": "1"
-    },
-    {
-      "id": "mWt6YAzlcS_xuVPWz3k-W",
-      "createdAt": 1588976030878,
-      "name": "Doggy",
-      "type": "DOG",
-      "userId": "1"
-    },
-    {
-      "id": "6dlXfk2koIaExxPc2SB9d",
-      "createdAt": 1588976217582,
-      "name": "dog1",
-      "type": "DOG",
-      "userId": "1"
-    },
-    {
-      "id": "-GveNpUBt5mNftBDVUUPN",
-      "createdAt": 1588976244750,
-      "name": "cat1",
       "type": "CAT",
       "userId": "1"
     }

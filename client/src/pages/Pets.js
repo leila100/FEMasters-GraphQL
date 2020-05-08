@@ -13,10 +13,6 @@ const GET_PETS = gql`
       name
       type
       img
-      user {
-        id
-        userName
-      }
     }
   }
 `;
@@ -29,10 +25,6 @@ const NEW_PET = gql`
       name
       type
       img
-      user {
-        id
-        userName
-      }
     }
   }
 `;
@@ -49,11 +41,24 @@ export default function Pets() {
       });
     },
   });
-  if (loading || answer.loading) return <Loader />;
+  if (loading) return <Loader />;
   if (error || answer.error) return `Error! ${error.message}`;
 
   const onSubmit = (input) => {
-    addPet({ variables: { newPetData: { ...input, userId: 1 } } });
+    addPet({
+      variables: { newPetData: { ...input, userId: 1 } },
+      optimisticResponse: {
+        __typename: "Mutation",
+        newPet: {
+          id: 10,
+          __typename: "Pet",
+          createdAt: 1,
+          name: input.name,
+          type: input.type,
+          img: "image",
+        },
+      },
+    });
     setModal(false);
   };
 
