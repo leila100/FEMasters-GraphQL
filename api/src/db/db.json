@@ -28,6 +28,41 @@
       "name": "DEA",
       "type": "DOG",
       "userId": "1"
+    },
+    {
+      "id": "ZWMkNjhnBGg5znubHuUs-",
+      "createdAt": 1588909603289,
+      "name": "Daisy",
+      "type": "DOG",
+      "userId": "1"
+    },
+    {
+      "id": "-hjM8way34oBQYTA9PLmx",
+      "createdAt": 1588910123001,
+      "name": "Kenza",
+      "type": "CAT",
+      "userId": "1"
+    },
+    {
+      "id": "arm66l-oNVHxLRcQbbbMg",
+      "createdAt": 1588910157601,
+      "name": "doggy",
+      "type": "DOG",
+      "userId": "1"
+    },
+    {
+      "id": "q3BKHHJipB6_UN58NE-HY",
+      "createdAt": 1588910187120,
+      "name": "kitty",
+      "type": "CAT",
+      "userId": "1"
+    },
+    {
+      "id": "7KfVlT-78X5tnhueWB75M",
+      "createdAt": 1588910543481,
+      "name": "dog",
+      "type": "DOG",
+      "userId": "1"
     }
   ]
 }

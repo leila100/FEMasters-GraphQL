@@ -21,13 +21,32 @@ const GET_PETS = gql`
   }
 `;
 
+const NEW_PET = gql`
+  mutation CreatePet($newPet: NewPetInput!) {
+    newPet(input: $newPet) {
+      id
+      createdAt
+      name
+      type
+      img
+      user {
+        id
+        userName
+      }
+    }
+  }
+`;
+
 export default function Pets() {
   const [modal, setModal] = useState(false);
   const { data, loading, error } = useQuery(GET_PETS);
-  if (loading) return <Loader />;
-  if (error) return `Error! ${error.message}`;
+  const [newPet, answer] = useMutation(NEW_PET);
+  if (loading || answer.loading) return <Loader />;
+  if (error || answer.error) return `Error! ${error.message}`;
 
   const onSubmit = (input) => {
+    newPet({ variables: { newPet: { ...input, userId: 1 } } });
+    console.log(answer);
     setModal(false);
   };
 
