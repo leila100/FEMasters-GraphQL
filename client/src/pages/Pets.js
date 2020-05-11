@@ -13,6 +13,10 @@ const GET_PETS = gql`
       name
       type
       img
+      user {
+        id
+        age @client
+      }
     }
   }
 `;
@@ -56,6 +60,10 @@ export default function Pets() {
           name: input.name,
           type: input.type,
           img: "image",
+          user: {
+            id: 555,
+            age: 46,
+          },
         },
       },
     });
@@ -69,6 +77,8 @@ export default function Pets() {
       </div>
     </div>
   ));
+
+  console.log(data.pets[0]);
 
   if (modal) {
     return (
