@@ -12,6 +12,7 @@ const PET_FIELDS = gql`
     name
     type
     img
+    vaccinated @client
     user {
       id
       age @client
@@ -68,6 +69,7 @@ export default function Pets() {
             id: 555,
             age: 46,
           },
+          vaccinated: true,
         },
       },
     });
